@@ -1,0 +1,11 @@
+﻿<div ng-show="currentUser.isAuth" id="sidebar-wrapper" ng-controller="leftNavBarController">
+    <ul class="sidebar-nav">
+        <li>
+            <a href="dashboard" ng-class="{ active: isActive('/dashboard')}"><span class="glyphicon glyphicon-home"></span>  Dashboard</a>
+        </li>
+        <li>
+            <a href="users" ng-class="{ active: isActive('/users')}"><span class="glyphicon glyphicon-th"></span>  Users</a>
+        </li>
+        
+    </ul>
+</div>

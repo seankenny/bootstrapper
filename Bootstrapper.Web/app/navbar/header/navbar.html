@@ -1,0 +1,21 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top" data-ng-controller="navBarController">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="content/boostrapper.png" alt="hp.com" class="logo" />
+            <a href="./" class="navbar-brand">Bootstrapper Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <div ng-if="currentUser.isAuth">
+                <div data-ng-include="'app/navbar/header/authenticated.user.nav.html'"></div>
+            </div>
+            <div ng-if="!currentUser.isAuth">
+                <div data-ng-include="'app/navbar/header/unauthenticated.user.nav.html'"></div>
+            </div>
+        </div>
+    </div>
+</div>

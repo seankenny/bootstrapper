@@ -1,0 +1,32 @@
+﻿@using Bootstrapper.Web.Helpers
+
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrapper</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <base href="@BaseUriBuilder.Build(Request.Url)" />
+</head>
+<body data-ng-app="bootstrapper" data-ng-controller="BootstrapperController">
+
+    <div data-ng-include="'app/navbar/header/navbar.html'"></div>
+
+    <div data-alert ng-repeat="alert in alerts" type="{{alert.type}}" data-close="closeAlert($index)" data-ng-cloak>{{alert.msg}}</div>
+
+    <div id="wrapper" ng-class="{auth: currentUser.isAuth}">
+        <div data-ng-include="'app/navbar/left/navbar.html'"></div>
+
+        <div id="page-content-wrapper">
+            <div class="inset">@RenderBody()</div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/scripts")
+</body>
+</html>

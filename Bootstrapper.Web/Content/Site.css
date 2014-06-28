@@ -1,0 +1,270 @@
+﻿/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.navbar-inverse {
+    background-color: #0096D6;
+    border-color: #0096D6;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #FFFFFF;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #FFFFFF;
+    }
+
+.navbar-brand {
+    float: none;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+hr {
+    border-top: 1px solid #c1cedb;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #0096D6;
+    border-color: #1a76bf;
+}
+
+    .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+        color: #fff;
+        background-color: #0096D6;
+        border-color: #0096D6;
+    }
+
+.list-group-item {
+    background-color: #2F3946;
+    border: none;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+    .fade.ng-enter,
+    .fade.ng-leave {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+
+    .fade.ng-enter {
+        opacity: 0;
+    }
+
+    .fade.ng-enter-active {
+        opacity: 1;
+    }
+
+    .fade.ng-leave {
+        opacity: 1;
+    }
+
+    .fade.ng-leave-active {
+        opacity: 0;
+    }
+
+.modal.fade {
+    opacity: 1;
+}
+
+    .modal.fade .modal-dialog, .modal.in .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+/*start*/
+
+#wrapper {
+    padding-top: 50px;
+    transition: all 0.4s ease 0s;
+}
+
+    #wrapper.auth {
+        padding-left: 250px;
+    }
+
+#sidebar-wrapper {
+    margin-left: -250px;
+    left: 250px;
+    width: 250px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nav > .nav-item {
+    display: none;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+    .sidebar-nav li {
+        line-height: 40px;
+        text-indent: 20px;
+    }
+
+        .sidebar-nav li a {
+            color: #999999;
+            display: block;
+            text-decoration: none;
+        }
+
+            .sidebar-nav li a:hover {
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+                text-decoration: none;
+            }
+
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+                color: #fff;
+            }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+        .sidebar-nav > .sidebar-brand a {
+            color: #999999;
+        }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+.content-header {
+    height: 65px;
+    line-height: 65px;
+}
+
+    .content-header h1 {
+        margin: 0;
+        margin-left: 20px;
+        line-height: 65px;
+        display: inline-block;
+    }
+
+#menu-toggle {
+    display: none;
+}
+
+.inset {
+    padding: 20px;
+}
+
+.sidebar-nav a.active {
+    color: #fff;
+}
+
+.loading-spiner {
+    position: fixed; /* forces the element to stay fixed in relation to the viewport */
+    top: 30%; /* sets the top of the image 50% of the page height */
+    left: 55%; /* sets the left side of the image 50% across the page */
+    margin-left: -16px; /* moves the image half of its own width to the left-side of the page */
+    margin-top: -16px; /* moves the image half its height 'up' the page */
+}
+
+.alert {
+    position: fixed; /* forces the element to stay fixed in relation to the viewport */
+    top: 50px; /* sets the top of the image 50% of the page height */
+    left: 25%; /* sets the left side of the image 50% across the page */
+    width: 50%;
+    z-index: 999;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+pre.success {
+    color: white;
+    background-color: darkolivegreen;
+}
+
+pre.warning {
+    color: white;
+    background-color: orangered;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        left: 0;
+    }
+
+    #wrapper.active {
+        position: relative;
+        left: 250px;
+    }
+
+        #wrapper.active #sidebar-wrapper {
+            left: 250px;
+            width: 250px;
+            transition: all 0.4s ease 0s;
+        }
+
+    #menu-toggle {
+        display: inline-block;
+    }
+
+    .inset {
+        padding: 15px;
+    }
+
+    .nav > .nav-item {
+        display: initial;
+    }
+
+    #wrapper.auth {
+        padding-left: 0;
+    }
+}

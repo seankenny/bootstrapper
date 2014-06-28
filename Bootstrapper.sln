@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper.Web", "Bootstrapper.Web\Bootstrapper.Web.csproj", "{99F4E81E-6FE6-439A-82E3-DEDEF789784C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ITG|Any CPU = ITG|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.ITG|Any CPU.ActiveCfg = ITG|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.ITG|Any CPU.Build.0 = ITG|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.QA|Any CPU.Build.0 = QA|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F4E81E-6FE6-439A-82E3-DEDEF789784C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

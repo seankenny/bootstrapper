@@ -1,0 +1,24 @@
+﻿<pre class="warning">You do not need to be authenticated to get here</pre>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+            <h1>Bootstrapper</h1>
+            <p class="lead">A bare bones implementation of web api, angularjs, owin and token authentication</p>
+            <p>Comes as a result of having to do the same thing from scratch over and over</p>
+            <ul>
+                <li>AngularJs running in HTML5 Mode</li>
+                <li>Web Api to serve json (camel cased of course)</li>
+                <li>Bare bones MVC to server a master page with a basic index.cshtml to host the angular side of things</li>
+                <li>AngularJS structured as <strong>I</strong> prefer</li>
+                <li>Some handy directives and interceptors</li>
+                <li>Owin pipeline used to provide token authentication</li>
+                <li>Angular set up to use token auth</li>
+                <li>Routes have authorization on some - see app.js.  Root/home is unauth.  Dashboard/users are auth.</li>
+                <li>Web Api filters for data model validation and for exception handling - see the corresponding angular error interceptor service</li>
+                <li>Entity Framework - SQL Express</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
